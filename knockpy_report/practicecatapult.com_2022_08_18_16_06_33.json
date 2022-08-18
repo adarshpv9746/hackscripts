@@ -1,0 +1,30 @@
+{
+    "admin.practicecatapult.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "172.66.43.123",
+            "172.66.40.133"
+        ],
+        "code": 403,
+        "server": "cloudflare"
+    },
+    "www.practicecatapult.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "172.66.43.123",
+            "172.66.40.133"
+        ],
+        "code": 403,
+        "server": "cloudflare"
+    },
+    "_meta": {
+        "name": "knockpy",
+        "version": "5.3.0",
+        "time_start": 1660838730.2798774,
+        "time_end": 1660838793.0281641,
+        "domain": "practicecatapult.com",
+        "wordlist": 10757
+    }
+}

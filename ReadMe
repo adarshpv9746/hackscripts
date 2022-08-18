@@ -1,0 +1,11 @@
+A website information gathering shell script
+
+edit the info.sh files url to your required wesite url
+
+commands to run during initial setup:
+	chmod +x *
+	./setup.sh
+	
+command to run once initial setup is done
+	./info.sh
+	
