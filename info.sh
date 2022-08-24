@@ -1,4 +1,4 @@
-url="practicecatapult.com"
+url="google.com" #enter url without https://
 netcat="https://sitereport.netcraft.com/?url=http://"
 robtex="https://www.robtex.com/dns-lookup/"
 echo Navigating to website info for $url
