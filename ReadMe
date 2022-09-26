@@ -9,3 +9,7 @@ commands to run during initial setup:
 command to run once initial setup is done
 	./info.sh
 	
+Additonal tools:
+1.'maltego' for information gathering.
+2.'Weevely' to generate back door for file uplpoad vulnerabilities.
+3.'BurpSuite' to intercept API's.
