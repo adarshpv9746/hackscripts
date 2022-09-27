@@ -13,4 +13,4 @@ Additonal tools:
 1.'maltego' for information gathering.
 2.'Weevely' to generate back door for file uplpoad vulnerabilities.
 3.'BurpSuite' to intercept API's.
-4.Image shell bypass at dvwa lo level security using LFI vulnerability: http://localhost/dvwa/vulnerabilities/fi/?page=/var/www/html/dvwa/hackable/uploads/admin.jpg
+4.Image shell bypass at dvwa lo level security using LFI vulnerability: http://localhost/dvwa/vulnerabilities/fi/?page=/var/www/html/dvwa/hackable/uploads/admin.png
