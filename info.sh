@@ -1,4 +1,8 @@
-url="google.com" #enter url without https://
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <web url without https:// tag>"
+    exit 1
+fi
+url=$1 #enter url without https://
 netcat="https://sitereport.netcraft.com/?url=http://"
 robtex="https://www.robtex.com/dns-lookup/"
 echo Navigating to website info for $url
